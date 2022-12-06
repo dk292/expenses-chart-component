@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  padding: 3rem 0;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--Cream);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 0 0 1px var(--Medium-brown);
+}
+
+#header {
+  max-width: 338px;
+  margin: 0 auto;
+  background-color: var(--Soft-red);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+#header .text h3 {
+  color: var(--Very-pale-orange);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+#header .text h2 {
+  color: var(--Very-pale-orange);
+  font-weight: 700;
+}
+
+#main {
+  max-width: 338px;
+  padding: 1.5rem 1rem;
+  margin: 1rem auto;
+  background-color: var(--Very-pale-orange);
+  border-radius: 10px;
+}
+
+#main h1 {
+  font-size: 1.3rem;
+  color: var(--Dark-brown);
+}
+
+#main #main-block {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main hr {
+  background-color: var(--Medium-brown);
+  opacity: 0.3;
+  margin: 1rem 0;
+}
+
+#footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .text1 h3 {
+  color: var(--Medium-brown);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#footer .text1 h2 {
+  color: var(--Dark-brown);
+}
+
+#footer .text2 {
+  text-align: right;
+  align-self: end;
+}
+
+#footer .text2 h2 {
+  color: var(--Dark-brown);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#footer .text2 h3 {
+  color: var(--Medium-brown);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Javascript */
+.container {
+  width: 35px;
+  background-color: var(--Soft-red);
+  border-radius: 2.5px;
+}
+
+.hero-block {
+  align-self: baseline;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  position: relative;
+}
+
+.date-block {
+  font-size: 0.7rem;
+  color: var(--Very-pale-orange);
+  padding: 0.2rem 0.35rem;
+  background-color: var(--Dark-brown);
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2.5px;
+}
+
+.hero-block h2 {
+  font-size: 0.8rem;
+  color: var(--Medium-brown);
+  font-weight: 300;
+  margin-top: 0.7rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
